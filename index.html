@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- html code -->
+    <div class="container ">
+        <h1 class="text-center my-2">Resume Builder</h1>
+    <p class="text-center mx-200">made by Ankit</p>
+
+    </div>
+    <div class="row">
+        <!-- first row -->
+        <div class="col-md-6 ">
+            <h3 class="text-center">Personal Info</h3>
+            <!-- Name -->
+            <div class="form-group mt-3">
+                <label for="name">Name</label>
+                <input type="text"
+                id="'name"
+                placeholder="Enter your name"
+                class="form-control">
+            </div>
+<!-- phone number -->
+            <div class="form-group mt-3">
+                <label for="contactfield">Phone Number</label>
+                <input type="text"
+                id="contactfield"
+                placeholder="Enter your number"
+                class="form-control">
+            </div>
+            <!-- Address -->
+            <div class="form-group mt-3">
+                <label for="addressfield">Address</label>
+                <textarea name id="addressfield" placeholder="address" 
+                class='form-control'cols="30" 
+                rows="5"></textarea>
+                <!-- <input type="text" -->
+                <!-- id="addressfield"
+                placeholder="Address please"
+                class="form-control"> -->
+            </div>
+            <!-- imp links -->
+            <!-- 1. Github link -->
+            <p class="text-secondary my-3 text-center">Profile Links</p>
+            <div class="form-group my-3">
+                <label for="githubfield">Github Link</label>
+                <input type="text"
+                id="githubfield"
+                placeholder="paste your link"
+                class="form-control">
+            </div>
+            <!-- linkdin link -->
+            <div class="form-group my-3">
+                <label for="linkedinfield">Linkedin Link</label>
+                <input type="text"
+                id="linkedinfield"
+                placeholder="paste your link"
+                class="form-control">
+            </div>
+
+        </div>
+
+        <!-- second row -->
+        <div class="col-md-6">
+            <h3>Detail</h3>
+            <!-- objectives -->
+            <div class="form-group mt-6">
+                <label for="">Objectives</label>
+                <textarea name placeholder="show the passion to the company" 
+                class='form-control'cols="30" 
+                ></textarea>
+            </div>
+            <!-- Work Experience -->
+
+            <div class="form-group my-3">
+                <label for="">Work Experience</label>
+                <textarea name placeholder="show the experience" 
+                class='form-control wefield'cols="30" 
+                ></textarea>
+
+                <!-- button for adding experience dynamically -->
+                <div class="container text-center my-3" id="weaddButton">
+                    <button class="btn btn-primary btn-sm" onclick="addNewExField()">Add more Experiences</button>
+                </div>
+            </div>
+
+<!-- academic qualification -->
+            <div class="form-group my-3">
+                <label for="">Academic Qualifiction</label>
+                <textarea name placeholder="qualification" 
+                class='form-control acqfield'cols="30" 
+                ></textarea>
+
+                <!-- button for adding qualification dynamically -->
+
+                <div class="container text-center my-3" id="acqualification">
+                    <button class="btn btn-primary btn-sm" onclick="addNewAcField()">Add more qualification</button>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-3">
+            <button class="btn-primary btn-lg">Generate CV</button>
+        </div>
+
+
+    </div>
+    
+
+    
+    <!--bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
