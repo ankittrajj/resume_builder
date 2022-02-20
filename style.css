@@ -4,3 +4,22 @@
     box-sizing: border-box;
     
 }
+#cv-form{
+    /* display: none; */
+}
+#cv-template{
+    display: none;
+}
+.myimg{
+    border: 3px solid rgba(71, 221, 134, 0.863);
+    border-radius: 50%;
+    width: 100px;
+
+}
+.background{
+    background-color: aquamarine;
+}
+.objective{
+    box-shadow: 30%;
+    font-style: italic;
+}
